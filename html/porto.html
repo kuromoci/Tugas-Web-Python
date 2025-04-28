@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio</title>
+  <link rel="stylesheet" href="{{url_for('static', filename='css/styleporto.css')}}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <nav id="nav-container">
+    <div class="logo-section">
+      <img src="{{url_for('static', filename='images/mylogo.png')}}" style="width:32px;border-radius: 10px;">
+    </div>
+    <div class="link-section">
+      <ul>
+        <li><a href="{{url_for('home')}}">Home</a></li>
+        <li><a href="{{url_for('about')}}">About</a></li>
+        <li><a href="{{url_for('eduxp')}}">Education & Experience</a></li>
+        <li><a href="{{url_for('porto')}}">Portfolio</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main>
+    <div class="bg1">
+      <div class="image-container1">
+        <div class="first-row">
+          <img src="{{url_for('static', filename='images/1st.png')}}" class="pf1" width="400" height="225">
+          <img src="{{url_for('static', filename='images/2nd.png')}}" class="pf2" width="400" height="225">
+          <img src="{{url_for('static', filename='images/3rd.png')}}" class="pf3" width="400" height="225">
+        </div>
+        <div class="second-row">
+          <img src="{{url_for('static', filename='images/4th.png')}}" class="pf4" width="400" height="225">
+          <img src="{{url_for('static', filename='images/5th.png')}}" class="pf5" width="400" height="225">
+          <img src="{{url_for('static', filename='images/ty.png')}}" class="pf6" width="400" height="225">
+        </div>
+      </div>
+      <footer>
+        <div class="contacts">
+          <a href="https://www.instagram.com/mhrffree._" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://wa.me/628815962973" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://github.com/kuromoci" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </footer>
+  </main>
+</body>
+</html>

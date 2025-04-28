@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <link rel="stylesheet" href="{{url_for('static', filename='css/styleabout.css')}}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <nav id="nav-container">
+    <div class="logo-section">
+      <img src="{{url_for('static', filename='images/mylogo.png')}}" style="width:32px;border-radius: 10px;">
+    </div>
+    <div class="link-section">
+      <ul>
+        <li><a href="{{url_for('home')}}">Home</a></li>
+        <li><a href="{{url_for('about')}}">About</a></li>
+        <li><a href="{{url_for('eduxp')}}">Education & Experience</a></li>
+        <li><a href="{{url_for('porto')}}">Portfolio</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main>
+    <div class="bg1">
+      <div class="text-container1">
+        <h1>Hello!</h1>
+        <p>Let me introduce myself, my name is M. Roofiif Suryameyza. Saya berasal dari Palembang, Sumatera Selatan dan sekarang usia saya 18 tahun. <br><br>
+        
+        Ini adalah implementasi website yang menggunakan modul Flask pada bahasa pemrograman Python.
+        </p>
+      </div>
+      <div class="text-container2">
+        <h1>Minat dan Hobi</h1>
+        <p>Sebagai Gen-Z, tentu saya sangat tertarik dengan teknologi. Minat dan hobi saya pun tidak jauh dari teknologi, seperti desain, koding, menonton film, bermain game dan semacamnya. <br><br>
+        
+        Saya orang yang curiosity-nya tinggi jadinya saya selalu ingin tahu mengenai cara kerja suatu hal misalnya kayak cara listrik dialirkan atau bisa juga cara desain dan juga makna-makna dibalik desain tersebut. Lalu, berakhirlah saya di HMTE Unpad.
+        </p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experience</title>
+  <link rel="stylesheet" href="{{url_for('static', filename='css/styleexp.css')}}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <nav id="nav-container">
+    <div class="logo-section">
+      <img src="{{url_for('static', filename='images/mylogo.png')}}" style="width:32px;border-radius: 10px;">
+    </div>
+    <div class="link-section">
+      <ul>
+        <li><a href="{{url_for('home')}}">Home</a></li>
+        <li><a href="{{url_for('about')}}">About</a></li>
+        <li><a href="{{url_for('eduxp')}}">Education & Experience</a></li>
+        <li><a href="{{url_for('porto')}}">Portfolio</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main>
+    <div class="bg1">
+      <div class="text-container1">
+        <h1>Pendidikan dan Pengalaman</h1>
+        <p>
+          Saya sekolah di SMP YPI Tunas Bangsa, sebauh sekolah swasta yang kemudian menghantarkan saya ke salah satu SMA Unggulan di Provinsi saya, yaitu SMA Negeri Sumatera Selatan. SMA ini merupakan Boarding School dengan beasiswa pendidikan penuh selama 3 tahun. Bahasa sehari-hari yang digunakan adalah Bahasa Inggris sehingga saya mampu berbahasa Inggris. Dan dengan semua usaha akhirnya lolos SNBP di Teknik Elektro Unpad.
+        </p>
+      </div>
+      <div class="image-container1">
+        <div class="smp">
+          <img src="{{url_for('static', filename='images/images-removebg-preview.png')}}" width="200" height="200">
+          <p>SMP YPI Tunas Bangsa
+            <br>
+            2017-2021
+          </p>
+        </div>
+        <div class="sma">
+          <img src="{{url_for('static', filename='images/Smanss.png')}}" width="200" height="200">
+          <p>SMA Negeri Sumatera Selatan
+            <br>
+            2021-2024
+          </p>
+        </div>
+        <div class="uni">
+          <img src="{{url_for('static', filename='images/logo-unpad1.jpg')}}" width="200" height="200">
+          <p>Universitas Padjadjaran
+            <br>
+            2024-2028
+          </p>
+        </div>
+      </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homepage</title>
+  <link rel="stylesheet" href="{{url_for('static', filename='css/stylehome.css')}}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <nav id="nav-container">
+    <div class="logo-section">
+      <img src="{{url_for('static', filename='images/mylogo.png')}}" style="width:32px;border-radius: 10px;">
+    </div>
+    <div class="link-section">
+      <ul>
+        <li><a href="{{url_for('home')}}">Home</a></li>
+        <li><a href="{{url_for('about')}}">About</a></li>
+        <li><a href="{{url_for('eduxp')}}">Education & Experience</a></li>
+        <li><a href="{{url_for('porto')}}">Portfolio</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main>
+    <span>
+      <div>
+        <img src="{{url_for('static', filename='images/_PYM6810.JPG')}}" class="profile-photo2">
+      </div>
+      <h1>Welcome to my website!</h1>
+      <h2>Flask Programming Task</h2>
+    </span>
+    <div class="gradient1"></div>
+    <div class="gradient2"></div>
+    <div class="gradient3"></div>
+  </main>
+</body>
+</html>
